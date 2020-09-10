@@ -25,13 +25,13 @@
                 <a href="#">View All Products</a>
             </div>
             <div class="imgBox">
-                <img src="Images/pepsi001.png" class="pepsi" alt="">
+                <img src="images/pepsi001.png" class="pepsi" alt="">
             </div>
         </div>
         <div class="thumb">
-            <li><img src="Images/pepsi001.png" alt=""></li>
-            <li><img src="Images/pepsi002.png" alt=""></li>
-            <li><img src="Images/pepsi003.png" alt=""></li>
+            <li><img src="images/pepsi001.png" alt="" onclick="imgSlider('images/pepsi001.png')"></li>
+            <li><img src="images/pepsi002.png" alt="" onclick="imgSlider('images/pepsi002.png')"></li>
+            <li><img src="images/pepsi003.png" alt="" onclick="imgSlider('images/pepsi003.png')"></li>
         </div>
         <ul class="sci">
             <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
@@ -39,5 +39,10 @@
             <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
         </ul>
     </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.pepsi').src = anything;
+        }
+    </script>
 </body>
 </html>
